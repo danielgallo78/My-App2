@@ -1,0 +1,13 @@
+<h1>Home Component</h1>
+<hr>
+
+<h3 class="mx-4"> {{ nombre }} </h3>
+
+<button class="btn btn-primary mx-4"
+(click)="cambiarNombre()">
+    Cambiar nombre
+</button>
+
+<hr>
+
+<app-hijo [nombreHijo]="nombre" (cambioNombreHijo)="nombre= $event"></app-hijo>
